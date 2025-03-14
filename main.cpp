@@ -69,7 +69,9 @@ do{
             system("cls");
             break; // Restart the game
         } else {
-            cout << "Invalid Input. Please enter 'y' or 'n'." << endl;
+            cin.clear();
+            cin.ignore(10000, '\n');
+            cout << "Invalid Input." << endl;
         }
     }
 } while (true);
